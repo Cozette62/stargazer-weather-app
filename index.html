@@ -8,27 +8,36 @@
   , initial-scale=1.0"
     />
     <link rel="stylesheet" href="src/style.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Stargazer Weather App</title>
   </head>
   <body>
     <div class="weather-app">
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+        <input type="submit" value="Search" class="search-form-button"/>
       </form>
     </header>
 
     <main>
+      <div class="current-weather-data">
       <div>
-      <h1>Paris</h1>
-      <p>
+      <h1 class="weather-app-city">Paris</h1>
+      <p class="weather-app-details">
         Tuesday 14:49, scattered clouds
       </br>
-        Humidity: 66%, Wind: 3.13km/h
+        Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
       </p>
       </div>
-      <div>⛅ 12 degrees C</div>
+      <div class="current-weather">
+        <div class="emoji">⛅</div> 
+        <div class="temperature-value">12</div>
+        <div class="temperature-unit">◦C</div>
+      </div>
+    </div>
     </main>
     <footer>
       This project was coded by

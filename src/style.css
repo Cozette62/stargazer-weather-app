@@ -52,12 +52,12 @@ main {
 .weather-app-details strong {
   color: #885df1;
 }
-.current-weather {
+.current-weather-container {
   display: flex;
 }
-.emoji {
-  font-size: 44px;
-  margin-top: 22px;
+.icon {
+  font-size: 30px;
+  height: 30px;
 }
 .temperature-value {
   margin-left: 10px;
